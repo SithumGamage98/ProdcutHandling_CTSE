@@ -1,4 +1,3 @@
-
 ## CTSC - Microservice Prototype Project
 ### Welcome to the Microservice Prototype Project! This repository documents the design and implementation of a secure, microservice-based application component, showcasing fundamental DevOps practices and cloud capabilities.
 
