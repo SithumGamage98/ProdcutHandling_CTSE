@@ -34,7 +34,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Update a product
+// Update the product
 router.put('/:id', getProduct, async (req, res) => {
   if (req.body.title != null) {
     res.product.title = req.body.title;
