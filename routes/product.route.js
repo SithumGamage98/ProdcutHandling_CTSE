@@ -57,6 +57,7 @@ router.put('/:id', getProduct, async (req, res) => {
   }
 });
 
+
 // Delete a product
 router.delete('/:id', async (req, res) => {
   try {
