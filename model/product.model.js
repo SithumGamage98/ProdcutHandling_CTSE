@@ -18,7 +18,9 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
+
   // You can add more fields as needed
+  
 });
 
 const Product = mongoose.model('Product', productSchema);
