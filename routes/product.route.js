@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../model/product.model');
 
-// Get all products
+// Get all  products
 router.get('/', async (req, res) => {
   try {
     const products = await Product.find();
@@ -34,7 +34,8 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Update a product
+
+// Update the product
 router.put('/:id', getProduct, async (req, res) => {
   if (req.body.title != null) {
     res.product.title = req.body.title;
@@ -56,6 +57,7 @@ router.put('/:id', getProduct, async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
 
 // Delete a product
 router.delete('/:id', async (req, res) => {
@@ -82,6 +84,7 @@ async function getProduct(req, res, next) {
     return res.status(500).json({ message: err.message });
   }
 
+  
   res.product = product;
   next();
 }
