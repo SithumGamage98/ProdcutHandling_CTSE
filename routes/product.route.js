@@ -34,6 +34,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+
 // Update the product
 router.put('/:id', getProduct, async (req, res) => {
   if (req.body.title != null) {
@@ -56,6 +57,7 @@ router.put('/:id', getProduct, async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
 
 // Delete a product
 router.delete('/:id', async (req, res) => {
