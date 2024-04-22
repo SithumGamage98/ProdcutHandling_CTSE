@@ -50,8 +50,8 @@ router.put('/:id', getProduct, async (req, res) => {
   }
 
   try {
-    const updatedProduct = await res.product.save();
-    res.json(updatedProduct);
+   const updatedProduct = await res.product.save();
+   res.json(updatedProduct);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
