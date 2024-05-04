@@ -1,4 +1,4 @@
-//product.model.js
+//product.model.js file
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
